@@ -1,0 +1,68 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "1.8.0_202-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+			"$horizontalGroup": "par l {seq l {par t:::p {par l {seq {space :p:22:p, par l {comp label2:::p:138:p, comp label3:::p:138:p, comp label4:::p:138:p, comp label5:::p:138:p, comp label6:::p:138:p}, space :p:29:p, par t {comp tFEmail:::p:189:p, comp tFTelephone:::p:189:p, comp tFWorkExp:::p:189:p, comp tFAge:::p:189:p, comp tFAddress::t:p:189:p}}, seq l {space :p:235:p, comp button1:::p::p}}, seq t {space :p:22:p, comp label1:::p:138:p, space :::x, comp tFFullName:::p:189:p}}, space :::x}, seq t {space :0:0:x, comp cBConfirm:::p:406:p, space :p:65:p}}"
+			"$verticalGroup": "par l {seq l {space :p:95:p, par b {comp tFFullName::b:p::p, comp label1::b:p:20:p}, space s:::p, par b {comp tFAge::b:p::p, comp label2::b:p:20:p}, space s:::p, par b {comp tFWorkExp::b:p::p, comp label3::b:p:20:p}, space s:::p, par b {comp tFTelephone::b:p::p, comp label4::b:p:20:p}, space s:::p, par b {comp tFEmail::b:p::p, comp label5::b:p:20:p}, space s:::p, par b {comp tFAddress::b:p::p, comp label6::b:p:20:p}, space ::51:x, comp cBConfirm:::p::p, space u:::p, comp button1:::p::p, space :p:21:p}}"
+		} ) {
+			name: "this"
+			"title": "Employment Form"
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tFFullName"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tFWorkExp"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tFAge"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tFTelephone"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tFEmail"
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "button1"
+				"text": "Send"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "button1ActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "cBConfirm"
+				"text": "Confirm that you have read and accept the user agreement"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label1"
+				"text": "full name "
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label2"
+				"text": "age"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label3"
+				"text": "work experiences"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label4"
+				"text": "telephone"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label5"
+				"text": "email"
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "tFAddress"
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "label6"
+				"text": "address"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 510, 515 )
+		} )
+	}
+}
